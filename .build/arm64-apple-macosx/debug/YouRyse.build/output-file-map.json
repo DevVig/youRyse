@@ -1,0 +1,75 @@
+{
+  "": {
+    "swift-dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/master.swiftdeps"
+  },
+  "/Users/jonathanborgwing/dev/YouRise/Sources/Models/Goal.swift": {
+    "dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/Goal.d",
+    "object": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/Goal.swift.o",
+    "swiftmodule": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/Goal~partial.swiftmodule",
+    "swift-dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/Goal.swiftdeps",
+    "diagnostics": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/Goal.dia"
+  },
+  "/Users/jonathanborgwing/dev/YouRise/Sources/Models/GoalStore.swift": {
+    "dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalStore.d",
+    "object": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalStore.swift.o",
+    "swiftmodule": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalStore~partial.swiftmodule",
+    "swift-dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalStore.swiftdeps",
+    "diagnostics": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalStore.dia"
+  },
+  "/Users/jonathanborgwing/dev/YouRise/Sources/Views/AddGoalView.swift": {
+    "dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/AddGoalView.d",
+    "object": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/AddGoalView.swift.o",
+    "swiftmodule": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/AddGoalView~partial.swiftmodule",
+    "swift-dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/AddGoalView.swiftdeps",
+    "diagnostics": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/AddGoalView.dia"
+  },
+  "/Users/jonathanborgwing/dev/YouRise/Sources/Views/BacklogView.swift": {
+    "dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/BacklogView.d",
+    "object": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/BacklogView.swift.o",
+    "swiftmodule": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/BacklogView~partial.swiftmodule",
+    "swift-dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/BacklogView.swiftdeps",
+    "diagnostics": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/BacklogView.dia"
+  },
+  "/Users/jonathanborgwing/dev/YouRise/Sources/Views/ConfettiView.swift": {
+    "dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/ConfettiView.d",
+    "object": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/ConfettiView.swift.o",
+    "swiftmodule": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/ConfettiView~partial.swiftmodule",
+    "swift-dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/ConfettiView.swiftdeps",
+    "diagnostics": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/ConfettiView.dia"
+  },
+  "/Users/jonathanborgwing/dev/YouRise/Sources/Views/GoalListView.swift": {
+    "dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalListView.d",
+    "object": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalListView.swift.o",
+    "swiftmodule": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalListView~partial.swiftmodule",
+    "swift-dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalListView.swiftdeps",
+    "diagnostics": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalListView.dia"
+  },
+  "/Users/jonathanborgwing/dev/YouRise/Sources/Views/GoalRowView.swift": {
+    "dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalRowView.d",
+    "object": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalRowView.swift.o",
+    "swiftmodule": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalRowView~partial.swiftmodule",
+    "swift-dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalRowView.swiftdeps",
+    "diagnostics": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalRowView.dia"
+  },
+  "/Users/jonathanborgwing/dev/YouRise/Sources/Views/MainView.swift": {
+    "dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/MainView.d",
+    "object": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/MainView.swift.o",
+    "swiftmodule": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/MainView~partial.swiftmodule",
+    "swift-dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/MainView.swiftdeps",
+    "diagnostics": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/MainView.dia"
+  },
+  "/Users/jonathanborgwing/dev/YouRise/Sources/Views/StatsView.swift": {
+    "dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/StatsView.d",
+    "object": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/StatsView.swift.o",
+    "swiftmodule": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/StatsView~partial.swiftmodule",
+    "swift-dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/StatsView.swiftdeps",
+    "diagnostics": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/StatsView.dia"
+  },
+  "/Users/jonathanborgwing/dev/YouRise/Sources/YouRyseApp.swift": {
+    "dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/YouRyseApp.d",
+    "object": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/YouRyseApp.swift.o",
+    "swiftmodule": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/YouRyseApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/YouRyseApp.swiftdeps",
+    "diagnostics": "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/YouRyseApp.dia"
+  }
+}

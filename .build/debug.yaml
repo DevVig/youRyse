@@ -1,0 +1,81 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "YouRyse-arm64-apple-macosx26.0-debug.exe": ["<YouRyse-arm64-apple-macosx26.0-debug.exe>"]
+  "YouRyse-arm64-apple-macosx26.0-debug.module": ["<YouRyse-arm64-apple-macosx26.0-debug.module>"]
+  "main": ["<YouRyse-arm64-apple-macosx26.0-debug.exe>","<YouRyse-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<YouRyse-arm64-apple-macosx26.0-debug.exe>","<YouRyse-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/jonathanborgwing/dev/YouRise/Sources/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse":
+    is-mutated: true
+commands:
+  "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse-entitlement.plist"]
+    description: "Write auxiliary file /Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse-entitlement.plist"
+
+  "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/jonathanborgwing/dev/YouRise/Sources/Models/Goal.swift","/Users/jonathanborgwing/dev/YouRise/Sources/Models/GoalStore.swift","/Users/jonathanborgwing/dev/YouRise/Sources/Views/AddGoalView.swift","/Users/jonathanborgwing/dev/YouRise/Sources/Views/BacklogView.swift","/Users/jonathanborgwing/dev/YouRise/Sources/Views/ConfettiView.swift","/Users/jonathanborgwing/dev/YouRise/Sources/Views/GoalListView.swift","/Users/jonathanborgwing/dev/YouRise/Sources/Views/GoalRowView.swift","/Users/jonathanborgwing/dev/YouRise/Sources/Views/MainView.swift","/Users/jonathanborgwing/dev/YouRise/Sources/Views/StatsView.swift","/Users/jonathanborgwing/dev/YouRise/Sources/YouRyseApp.swift"]
+    outputs: ["/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/sources"]
+    description: "Write auxiliary file /Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/sources"
+
+  "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/AddGoalView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/BacklogView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/ConfettiView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/Goal.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalListView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalRowView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalStore.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/MainView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/StatsView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/YouRyseApp.swift.o"]
+    outputs: ["/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.product/Objects.LinkFileList"
+
+  "/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<YouRyse-arm64-apple-macosx26.0-debug.exe>":
+    tool: phony
+    inputs: ["<YouRyse-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    outputs: ["<YouRyse-arm64-apple-macosx26.0-debug.exe>"]
+
+  "<YouRyse-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/Goal.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalStore.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/AddGoalView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/BacklogView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/ConfettiView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalListView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalRowView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/MainView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/StatsView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/YouRyseApp.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/Modules/YouRyse.swiftmodule"]
+    outputs: ["<YouRyse-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.YouRyse-arm64-apple-macosx26.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/AddGoalView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/BacklogView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/ConfettiView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/Goal.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalListView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalRowView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalStore.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/MainView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/StatsView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/YouRyseApp.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.product/Objects.LinkFileList"]
+    outputs: ["/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/YouRyse"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug","-o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse","-module-name","YouRyse","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_YouRyse_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx13.0","-Xlinker","-add_ast_path","-Xlinker","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/Modules/YouRyse.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.YouRyse-arm64-apple-macosx26.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse-entitlement.plist"]
+    outputs: ["<YouRyse-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/YouRyse"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse-entitlement.plist","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse"]
+
+  "C.YouRyse-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/jonathanborgwing/dev/YouRise/Sources/Models/Goal.swift","/Users/jonathanborgwing/dev/YouRise/Sources/Models/GoalStore.swift","/Users/jonathanborgwing/dev/YouRise/Sources/Views/AddGoalView.swift","/Users/jonathanborgwing/dev/YouRise/Sources/Views/BacklogView.swift","/Users/jonathanborgwing/dev/YouRise/Sources/Views/ConfettiView.swift","/Users/jonathanborgwing/dev/YouRise/Sources/Views/GoalListView.swift","/Users/jonathanborgwing/dev/YouRise/Sources/Views/GoalRowView.swift","/Users/jonathanborgwing/dev/YouRise/Sources/Views/MainView.swift","/Users/jonathanborgwing/dev/YouRise/Sources/Views/StatsView.swift","/Users/jonathanborgwing/dev/YouRise/Sources/YouRyseApp.swift","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/sources"]
+    outputs: ["/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/Goal.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalStore.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/AddGoalView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/BacklogView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/ConfettiView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalListView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/GoalRowView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/MainView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/StatsView.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/YouRyseApp.swift.o","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/Modules/YouRyse.swiftmodule"]
+    description: "Compiling Swift Module 'YouRyse' (10 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","YouRyse","-emit-dependencies","-emit-module","-emit-module-path","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/Modules/YouRyse.swiftmodule","-output-file-map","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/output-file-map.json","-incremental","-c","@/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/YouRyse.build/sources","-I","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j14","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/jonathanborgwing/dev/YouRise/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","YouRyse_main","-color-diagnostics","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","yourise"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/jonathanborgwing/dev/YouRise/Sources/","/Users/jonathanborgwing/dev/YouRise/Package.swift","/Users/jonathanborgwing/dev/YouRise/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
